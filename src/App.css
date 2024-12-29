@@ -1,0 +1,242 @@
+/* Reset and Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f9;
+  background-image: url('c:\Users\Msi\Pictures\Saved Pictures\projectImage.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* App Container */
+.app-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background for readability */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #e60000;
+}
+
+/* Form Styling */
+.form-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.form-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.link-btn {
+  margin-top: 10px;
+  background: none;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dashboard Styling */
+.balance-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.balance-section h4 {
+  color: #444;
+}
+
+h1.positive {
+  color: #28a745;
+}
+
+h1.negative {
+  color: #dc3545;
+}
+
+.income-expense-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.income, .expense {
+  text-align: center;
+  width: 48%;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.income h4, .expense h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.income p, .expense p {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.transactions {
+  margin-top: 30px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.transaction-item .positive {
+  color: #28a745;
+}
+
+.transaction-item .negative {
+  color: #dc3545;
+}
+
+.delete-btn {
+  background: none;
+  color: #ff4d4d;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #e60000;
+}
+
+.transaction-form {
+  margin-top: 20px;
+}
+
+.transaction-form .input-group {
+  margin-bottom: 20px;
+}
+
+.transaction-form .input-group input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+
+.transaction-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transaction-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styling for different states */
+button:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .income-expense-section {
+    flex-direction: column;
+  }
+
+  .income, .expense {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
